@@ -12,7 +12,7 @@ function ApiRoutePage() {
 
 	return (
 		<main className={styles.main}>
-			<Posts posts={posts} />
+			{posts ? <Posts posts={posts} /> : <>Loading...</>}
 		</main>
 	);
 }
